@@ -1,0 +1,4 @@
+11 ->x
+23 ->y
+<-x <-y add print
+<-x <-y mul print

@@ -1,0 +1,18 @@
+:fibo 1
+    ->n
+    <-n 0 eq if
+        0
+    endif
+    <-n 1 eq if
+        1
+    endif
+    <-n 1 neq <-n 0 neq and if
+        <-n 1 sub @fibo <-n 2 sub @fibo add
+    endif
+endfunc
+
+0 ->i
+while <-i 25 lt repeat
+    <-i @fibo print
+    <-i 1 add ->i
+endwhile

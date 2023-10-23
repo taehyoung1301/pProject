@@ -1,0 +1,9 @@
+0 ->i
+while 10 <-i gt repeat
+    0 ->j
+    while 10 <-j gt repeat
+        <-i string "," <-j string add add print
+        <-j 1 add ->j
+    endwhile
+    <-i 1 add ->i
+endwhile

@@ -1,0 +1,9 @@
+:foo 2
+    ->repea ->a
+    <-repea 0 gt if
+         <-repea 1 sub <-a  @foo ->a
+    endif
+    "i have repeat" print
+    <-a 1 add
+endfunc
+10 1 @foo print
